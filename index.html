@@ -40,115 +40,69 @@
     <div class="layout-wrapper">
 
             <div class="services-container">
-
-  <div class="service-item">
-    <a href="#" class="service-card">Barnehage</a>
-   <div class="rating">
-    <button type="button" data-value="1">☆</button>
-    <button type="button" data-value="2">☆</button>
-    <button type="button" data-value="3">☆</button>
-    <button type="button" data-value="4">☆</button>
-    <button type="button" data-value="5">☆</button>
+                </div>
+</section> 
+    <section id="tjenester-info" class="info-section">
+    <h2>Tjenester</h2>
+    <p>Her finner du informasjon om ulike tjenester i Øygarden.</p>
+</section>
+       
 </div>
-    <p class="service-description">
-      Her kan du finne informasjon om barnehager i Øygarden. 
-      <br>
-      <a href="https://www.oygarden.kommune.no/tjenester/barnehage/">Les mer</a>
-    </p>
-    <!-- Bilde lagt til her -->
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTQ8wIxfZlfsexsYDSkB3OtTqY5-YfYo4UydI8_w9t8ibwaoOYtTxY19fd&s=10" alt="Barnehage i Øygarden" class="service-image">
-  </div>
+<div class="kommentar-seksjon">
+    <h2>Legg igjen en kommentar</h2>
 
-  <div class="service-item">
-    <a href="#" class="service-card">Skole</a>
-   <div class="rating">
-    <button type="button" data-value="1">☆</button>
-    <button type="button" data-value="2">☆</button>
-    <button type="button" data-value="3">☆</button>
-    <button type="button" data-value="4">☆</button>
-    <button type="button" data-value="5">☆</button>
-</div>
-    <p class="service-description">
-      Her kan du finne informasjon om skoler i Øygarden.
-      <br>
-      <a href="https://www.oygarden.kommune.no/tjenester/skole/">Les mer</a>
-    </p>
-    <img src="https://holon.no/wp-content/uploads/2019/08/skogsvaag_skole_4-2000x1333.jpg" alt="Skole i Øygarden" class="service-image">
-  </div>
+    <form id="kommentar-form">
+       
+<input
+    type="text"
+    id="kommentar-navn"
+    placeholder="Ditt navn"
+    minlength="2"
+    maxlength="50"
+    required
+>
 
-  <div class="service-item">
-    <a href="#" class="service-card">Kultur</a>
-   <div class="rating">
-    <button type="button" data-value="1">☆</button>
-    <button type="button" data-value="2">☆</button>
-    <button type="button" data-value="3">☆</button>
-    <button type="button" data-value="4">☆</button>
-    <button type="button" data-value="5">☆</button>
-</div>
-    <p class="service-description">
-      Her kan du finne informasjon om kulturtilbud i Øygarden.
-      <br>
-      <a href="https://www.oygarden.kommune.no/tjenester/kultur/">Les mer</a>
-    </p>
-    <img src="https://cdn.prod.website-files.com/6710ebdd64c5072a7aa45c03/674834a3e3deae494da66a68_arrangement_07.jpg" alt="Kultur i Øygarden" class="service-image">
-  </div>
 
-  <div class="service-item">
-    <a href="#" class="service-card">Transport</a>
-   <div class="rating">
-    <button type="button" data-value="1">☆</button>
-    <button type="button" data-value="2">☆</button>
-    <button type="button" data-value="3">☆</button>
-    <button type="button" data-value="4">☆</button>
-    <button type="button" data-value="5">☆</button>
-</div>
-    <p class="service-description">
-      Her kan du finne informasjon om transportmuligheter i Øygarden.
-      <br>
-      <a href="https://www.oygarden.kommune.no/tjenester/transport/">Les mer</a>
-    </p>
-    <img src="https://g.acdn.no/api/lumina/backend/ami-medium/ece5/fana/2026/5/26/13/02F49900-DA35-4782-8BE3-F56697790EA5.JPG" alt="Transport i Øygarden" class="service-image">
-  </div>
+       <textarea
+    id="kommentar-tekst"
+    placeholder="Skriv din kommentar her..."
+    minlength="3"
+    maxlength="500"
+    required
+></textarea>
+<p id="kommentar-tegn">0 / 500 tegn</p>
+        <button type="submit">Send inn</button>
+    </form>
+<h3 id="kommentar-antall">Kommentarer (0)</h3>
 
-  <div class="service-item">
-    <a href="#" class="service-card">Byggesaker</a>
-   <div class="rating">
-    <button type="button" data-value="1">☆</button>
-    <button type="button" data-value="2">☆</button>
-    <button type="button" data-value="3">☆</button>
-    <button type="button" data-value="4">☆</button>
-    <button type="button" data-value="5">☆</button>
-</div>
-    <p class="service-description">
-      Her kan du finne informasjon om byggesaker i Øygarden.
-      <br>
-      <a href="https://www.oygarden.kommune.no/tjenester/byggesaker/">Les mer</a>
-    </p>
-    <img src="https://vcdn.polarismedia.no/e7d771e2-3aa4-40d5-a12b-ff4c24a81d8c?fit=clip&q=80&tight=false&w=2000" alt="Byggesaker i Øygarden" class="service-image">
-  </div>
-  <div class="service-item">
-    <a href="http://www.nav.no/"
-    target="_blank" class="service-card">NAV</a>
-   <div class="rating">
-    <button type="button" data-value="1">☆</button>
-    <button type="button" data-value="2">☆</button>
-    <button type="button" data-value="3">☆</button>
-    <button type="button" data-value="4">☆</button>
-    <button type="button" data-value="5">☆</button>
-</div>
-    <p class="service-description">
-      Her kan du finne informasjon om NAV-tjenester i Øygarden.
-      <br>
-      <a href="https://www.nav.no/">Les mer</a>
-    </p>
-    <img src="https://g.acdn.no/obscura/API/dynamic/r1/ece5/tr_2000_2000_s_f/1786958922000/nett/2026/8/17/11/NTB_8cnfHL4p5QY.jpg?chk=2459BF" alt="NAV i Øygarden" class="service-image">
-  </div>
+    <div id="kommentar-liste"></div>
+    <!-- Admin login -->
+<section class="admin-panel">
+    <h3>Administrator</h3>
 
-</section> <!-- Closing the "tjenester" section -->
-    <section id="tjenester" class="info-section">
-        <h2>Tjenester</h2>
-        <p>Her finner du informasjon om ulike tjenester i Øygarden.</p>
-    </section>
+    <form id="admin-login-form">
+        <label for="admin-password">Passord</label>
+
+        <input
+            type="password"
+            id="admin-password"
+            placeholder="Skriv inn passord"
+            autocomplete="current-password"
+            required
+        >
+
+        <button type="submit">Logg inn</button>
+    </form>
+
+    <p id="admin-message" role="status"></p>
+    <button
+    type="button"
+    id="admin-logout"
+    hidden
+>
+    Logg ut
+</button>
+</section>
 </div>
         </div>
     </div>

@@ -1,0 +1,25 @@
+
+
+
+# Kompilerte filer fra .NET
+**/bin/
+**/obj/
+
+# Visual Studio Code-filer
+.vscode/
+
+# Systemfiler fra macOS
+.DS_Store
+**/.DS_Store
+
+# Lokale datafiler
+backend/kommentarer.json
+backend/vurderinger.json
+
+# Lokale innstillinger og hemmelige nøkler
+**/secrets.json
+**/appsettings.Local.json
+**/appsettings.*.local.json
+.env
+.env.*
+

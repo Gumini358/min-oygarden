@@ -111,7 +111,7 @@ body {
 }
 
 /* Poprawiona klasa kafelków */
-.service-cart {
+.service-card {
     background-color: #0d9488;
     color: white;
     padding: 1.5rem;
@@ -122,7 +122,7 @@ body {
     margin: 1rem 0;
 }
 
-.service-cart:hover {
+.service-card:hover {
     background-color: #0f766e;
 }
 
@@ -147,7 +147,8 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;         
-    gap: 2rem;                
+    column-gap: 8rem;
+row-gap: 3rem;              
     justify-content: center;  
     padding: 2rem 2rem 4rem;
 }
@@ -195,7 +196,7 @@ body {
     height: 140px;
     object-fit: cover;
     border-radius: 8px;
-    margin-top: 0.5rem;
+    margin-top: 25px;
 }
 
 .info-section {
@@ -493,4 +494,173 @@ footer p {
     max-width: 1200px;
     margin: 18px auto;
     padding: 0 24px;
+}
+
+/* Kommentar-seksjon */
+
+.kommentar-seksjon {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.kommentar-seksjon h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #172033;
+}
+
+#kommentar-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#kommentar-form input,
+#kommentar-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#kommentar-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#kommentar-form button {
+    background-color: #30ad9c;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#kommentar-form button:hover {
+    background-color: #238d80;
+}
+
+.kommentar {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 15px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.kommentar strong {
+    display: block;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.kommentar p {
+    color: #475569;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.admin-panel {
+    margin: 30px auto;
+    padding: 25px;
+    max-width: 500px;
+    background-color: #f4f8f9;
+    border: 1px solid #dce7eb;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.admin-panel h3 {
+    color: #172033;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#admin-login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+#admin-password {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    border: 1px solid #ccd8dd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#admin-login-form button,
+#admin-logout {
+    padding: 12px 24px;
+    background-color: #2eac9d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#admin-login-form button:hover,
+#admin-logout:hover {
+    background-color: #238f83;
+}
+
+#admin-message {
+    margin-top: 15px;
+    color: #172033;
+    font-weight: 600;
+}
+
+#admin-logout {
+    margin-top: 15px;
+}
+
+#admin-logout[hidden] {
+    display: none;
+}
+
+.delete-comment-btn {
+    margin-top: 12px;
+    padding: 10px 18px;
+    background-color: #dc4545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.delete-comment-btn:hover {
+    background-color: #b92f2f;
+}
+
+.delete-comment-btn:focus-visible {
+    outline: 3px solid #172033;
+    outline-offset: 3px;
+}
+
+#kommentar-antall {
+    margin: 25px 0 15px;
+    padding-bottom: 12px;
+    color: #172033;
+    font-size: 22px;
+    font-weight: 700;
+    border-bottom: 3px solid #2eac9d;
 }
