@@ -69,7 +69,7 @@ ratings.forEach((rating) => {
 });
 
 async function getData() {
-    const url = "http://localhost:5159/api/tjenester";
+    const url = "https://min-oygarden.onrender.com/api/tjenester";
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -116,7 +116,7 @@ for (let i = 1; i <= 5; i++) {
     const selectedValue = Number(starButton.dataset.value);
 
    const response = await fetch(
-    `http://localhost:5159/api/tjenester/${tjeneste.id}/vurdering/${selectedValue}`,
+    `https://min-oygarden.onrender.com/api/tjenester/${tjeneste.id}/vurdering/${selectedValue}`,
     {
         method: "POST"
     }
